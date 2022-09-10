@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DireccionesIP</title>
+    <link rel="stylesheet" href="css/Style.css">
+
+    <br>
+
+    <div>
+        <table class="menú" width = "100%">
+            <tr>
+                <td width ="25%" align="center"><img src = "img TCPIP/Logo UNACH.jpg" width="100px" height="90px"></td>
+                <td align="right" valign="bottom"><a href="Inicio.html">Inicio</a></td>
+                <td align="center" valign="bottom"><a href="Arquitectura-protocolos.html">Arquitectura-protocolos</a></td>
+                <td valign="bottom"><a href="DireccionesIP.html">DireccionesIP</a></td>
+                <td valign="bottom"><a href="Fragmentación.html">Fragmentación</a></td>
+                <td valign="bottom"><a href="TEnrutamiento.html">TEnrutamiento</a></td>
+                <td valign="bottom"><a href="Multiplexación.html">Multiplexación</a></td>
+            </tr>
+        </table>   
+    </div>
+        
+    <br><br>
+ 
+    <img class="Banner" src="img TCPIP/Banner DireccionesIP.jpg">
+      
+    <table class ="tablamenu">
+        <tr>
+            <td colspan="2"><p class="titulo">Direcciones IP</p></td>           
+        </tr>
+          
+        <tr>
+            <td><div class="linea"></div></td>
+            <td><p class="contenido">Cada dirección es única para cada una de las interfaces de red, por lo que,
+                     si un dispositivo dispone de más de una interfaz de red, necesitará una dirección IP para cada una</p></td>
+        </tr>
+    </table>
+
+</head>
+
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+
+<body>
+    <table width="70%">
+        <tr>
+            <td>
+                <table class="tablaDireccionesIP">
+                    <tr>
+                        <td>Las direcciones IP proporcionan dos datos: el número de red y el número de host. 
+                            Las direcciones IP tienen una longitud de 32 bits o 4 bytes. De cada conversión resulta un número comprendido entre 0 y 255,
+                            los cuales se escriben separados entre sí por un punto. 
+                            <p>Los sistemas de red se direccionan de 3 formas:</p></td>
+                    </tr>
+                </table>
+            </td>
+
+            <td>
+                <table class="tablaDireccionesIP">
+                    <tr>
+                        <td>El protocolo IP distingue la clase a la que pertenece una dirección analizando el valor de sus bits de mayor peso.
+                             Para determinar la clase de una dirección IP se siguen las siguientes reglas:</td>    
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <table class="tablaDireccionesIP">
+                    <tr>
+                        <td class="tituloDireccionesIP">Unicast</td>
+                    </tr>
+
+                    <tr>
+                        <td><img class="ImgUnicast" src="img TCPIP/Unicast.jpg"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Los paquetes de datos tienen como destino la dirección de un único host.</td>
+                    </tr>
+                </table>
+            </td>
+
+            <td>
+                <table class="tablaDireccionesIP">
+                    <tr>
+                        <td class="tituloDireccionesIP">Clase A</td>
+                    </tr>
+
+                    <tr>
+                        <td><img class="ClasesABC" src="img TCPIP/ClaseA.png"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Si el bit de mayor peso es 0, la mascará tendrá 8 bits.
+                            Se tiene por tanto 8 bits para direcciones de red y 24 bits para host. 
+                            Pensada para empresas o corporaciones con grandes terminales</td>
+                    </tr>
+
+                    <tr>
+                        <td class="EjemploIP">De 0.0.0.0 a 127.255.255.255</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <table class="tablaDireccionesIP">
+                    <tr>
+                        <td class="tituloDireccionesIP">Multcast</td>
+                    </tr>
+
+                    <tr>
+                        <td><img class="MultiBroad" src="img TCPIP/Multicast.jpg"></td>
+                    </tr>
+
+                    <tr>        
+                         <td>Los datos se pueden enviar de forma simultánea a un determinado conjunto de host.</td>    
+                    </tr>
+                </table>
+            </td>
+
+            <td>
+                <table class="tablaDireccionesIP">
+                    <tr>
+                        <td class="tituloDireccionesIP">Clase B</td>
+                    </tr>
+
+                    <tr>
+                        <td><img class="ClasesABC" src="img TCPIP/ClaseB.png"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Si los dos primeros bits son 1 y 0, la mascará tendrá 16 bits.
+                            Se tiene por tanto 16 bits para direcciones de red y 16 bits para host.
+                            Pensada para corporaciones medianas.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="EjemploIP">De 128.0.0.0 a 191.255.255.255</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <table class="tablaDireccionesIP">
+                    <tr>
+                        <td class="tituloDireccionesIP">Broadcast</td>
+                    </tr>
+
+                    <tr>
+                        <td><img class="MultiBroad" src="img TCPIP/Broadcast.jpg"></td>
+                    </tr>
+
+                    <tr>        
+                         <td>Permite enviar datos a todos los sistemas que forman parte de una red.</td>    
+                    </tr>
+                </table>
+            </td>
+
+            <td>
+                <table class="tablaDireccionesIP">
+                    <tr>
+                        <td class="tituloDireccionesIP">Clase C</td>
+                    </tr>
+
+                    <tr>
+                        <td><img class="ClasesABC" src="img TCPIP/ClaseC.png"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Si los tres primeros bits son 1, 1, y 0, la mascará tendrá 24 bits.
+                            Se tiene por tanto 24 bits para direcciones de red y 8 bits para host.
+                            Pensada para entornos pequeños.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="EjemploIP">De 192.0.0.0 a 223.255.255.255</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+<br><br><br>
+
+<footer>
+    <table class="FooterDirecciones">
+        <tr>
+            <td class="tituloFooter">Protocolo TCP/IP</td>
+        </tr>
+
+        <tr>
+            <td>José Mayorga72@unach.mx</td>
+        </tr> 
+
+        <tr>
+            <td>&copy;2022 por José Mayorga. UNACH, Tuxtla Gutierrez</td>
+        </tr>  
+    </table>
+</footer>
+
+</html>

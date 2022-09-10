@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquitectura-Protocolos</title>
+    <link rel="stylesheet" href="css/Style.css">
+    
+    <br>
+
+    <div>
+        <table class="menú" width = "100%">
+            <tr>
+                <td width ="25%" align="center"><img src = "img TCPIP/Logo UNACH.jpg" width="100px" height="90px"></td>
+                <td align="right" valign="bottom"><a href="Inicio.html">Inicio</a></td>
+                <td align="center" valign="bottom"><a href="Arquitectura-protocolos.html">Arquitectura-protocolos</a></td>
+                <td valign="bottom"><a href="DireccionesIP.html">DireccionesIP</a></td>
+                <td valign="bottom"><a href="Fragmentación.html">Fragmentación</a></td>
+                <td valign="bottom"><a href="TEnrutamiento.html">TEnrutamiento</a></td>
+                <td valign="bottom"><a href="Multiplexación.html">Multiplexación</a></td>
+            </tr>
+        </table>   
+    </div>
+        
+    <br><br>
+ 
+    <img class="Banner" src="img TCPIP/Banner Arquitectura-protocolos.jpg">
+      
+    <table class ="tablamenu">
+        <tr>
+            <td colspan="2"><p class="titulo" style="color: rgb(7, 7, 110)">Arquitectura del protocolo TCP/IP</p></td>           
+        </tr>
+
+        <tr>
+            <td><div class="linea"></div></td>
+            <td><p class="contenido">El protocolo TCP/IP fue creado antes del modelo de capas OSI, por lo que no coinciden entre sí.
+                    Mayormente se suele definir de tres a cinco niveles funcionales en la arquitectura del protocolo.</p>
+            </td>
+        </tr>
+    </table>
+
+</head>
+
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+
+<body>
+    <img class="fondoArquitectura1" src="img TCPIP/Fondo_Arqui.png">
+    <img class="fondoArquitectura2" src="img TCPIP/Fondo1_Arqui.png">
+
+    <table width="50%">
+        <tr>
+            <td>
+                <table class="tablaArquitectura">
+                    <tr>
+                        <dt class="tituloArquitectura">Capa de acceso a la red(por debajo de IP)</dt>                       
+                        <td>
+                            <dl>
+                                <dd>Los protocolos de esta capa proporcionan los medios para que el sistema entregue los datos a los dispositivos conectados a la red. 
+                                    Está formado por una red LAN, o WAN (de conexión punto a punto) homogénea.
+                                    Dentro de esta capa opera el protocolo ARP, el cual se encarga de asociar direcciones IP con direcciones físicas Ethernet.</dd>
+                            </dl>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <table class="tablaArquitectura">
+                    <tr>
+                        <dt class="tituloArquitectura">Capa de red: Internet (Nivel IP)</dt>
+                        <td>
+                            <dl>
+                                <dd>Es la encargada de mover los paquetes de información a través de las diferentes redes para llegar a su destino, donde destaca el IP. 
+                                    Los datagramas realizan saltos a través de diversas redes para alcanzar su destino, en donde el camino más adecuado a cada momento se llama enrutamiento. 
+                                    El direccionamiento y la asignación de direcciones constituyen sus principales funciones.</dd>
+                            </dl>
+                        </td>                
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <table class="tablaArquitectura">
+                    <tr>
+                        <dt class="tituloArquitectura">Capa de transporte (Nivel TCP)</dt>            
+                        <td>
+                            <dl>
+                                <dd>Este nivel confiere fiabilidad a la red, y es la encargada de proporcionar un buen flujo de datos entre dos ordenadores. 
+                                    Se encuentran dos protocolos: TCP permite enviar datos de un extremo a otro, con la posibilidad de detectar errores y corregirlos, 
+                                    por el contrario, UDP reduce al máximo la información incluida, ganando rapidez a costa de sacrificar la fiabilidad en los datos.</dd>
+                            </dl>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <table class="tablaArquitectura">
+                    <tr>
+                        <dt class="tituloArquitectura">Capa de aplicación (Por encima de TCP)</dt>            
+                    
+                        <td>
+                            <dl>
+                                <dd>Esta capa corresponde a aplicaciones y procesos que utilizan internet, como clientes y servidores de www, telnet, SMTP, correo electrónico, FTP, etc.
+                                    Los servidores de red proporcionan servicios esenciales para las comunicaciones entre ordenadores.</dd>
+                            </dl>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>           
+    </table>
+
+    <br><br>
+
+    <img class="ImagenArquitectura" src="img TCPIP/Ejemplo Arquitectura-Protocolos.png">
+
+</body>
+
+<br><br><br>
+
+<footer>
+    <table class="FooterArquitectura">
+        <tr>
+            <td class="tituloFooter">Protocolo TCP/IP</td>
+        </tr> 
+
+        <tr>
+            <td>José Mayorga72@unach.mx</td>
+        </tr>
+
+        <tr>
+            <td>&copy;2022 por José Mayorga. UNACH, Tuxtla Gutierrez</td>
+        </tr>  
+    </table>
+</footer>
+
+</html>

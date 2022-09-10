@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fragmentación</title>
+    <link rel="stylesheet" href="css/Style.css">
+
+    <br>
+
+    <div>
+        <table class="menú" width = "100%">
+            <tr>
+                <td width ="25%" align="center"><img src = "img TCPIP/Logo UNACH.jpg" width="100px" height="90px"></td>
+                <td align="right" valign="bottom"><a href="Inicio.html">Inicio</a></td>
+                <td align="center" valign="bottom"><a href="Arquitectura-protocolos.html">Arquitectura-protocolos</a></td>
+                <td valign="bottom"><a href="DireccionesIP.html">DireccionesIP</a></td>
+                <td valign="bottom"><a href="Fragmentación.html">Fragmentación</a></td>
+                <td valign="bottom"><a href="TEnrutamiento.html">TEnrutamiento</a></td>
+                <td valign="bottom"><a href="Multiplexación.html">Multiplexación</a></td>
+            </tr>
+        </table>   
+    </div>
+        
+    <br><br>
+ 
+    <img class="Banner" src="img TCPIP/Banner Fragmentación.jpg">
+      
+    <table class ="tablamenu">
+        <tr>
+            <td colspan="2"><p class="titulo">Fragmentación</p></td>           
+        </tr>
+          
+        <tr>
+            <td><div class="linea"></div></td>
+
+            <td><p class="contenido">Es un mecanismo que permite separar (o fragmentar) un paquete IP entre varios bloques de datos, 
+                si su tamaño sobrepasa la unidad máxima de transferencia del canal.</p>      
+            </td>
+        </tr>
+    </table>
+
+</head>
+
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+
+<body>
+    <table width="60%">
+        <tr>
+            <td>
+                <table class="tablaFragmentación">
+                    <tr>
+                        <td>
+                            La mayoría de protocolos de nivel de enlace fijan una longitud máxima (Máximum Transfer Unit)
+                            de datos a transmitir en una trama que, en el caso de Ethernet, la MTU vale 1500 bytes.</td>
+                    </tr>
+
+                    <tr>
+                        <td><img class="ImgFragmentación1" src="img TCPIP/Fondo_Fragmentación.png"></td>
+                    </tr>
+                    <tr>
+                        <td>Cuando un paquete pasa por un direccionador conectado a una red con una MTU inferior al tamaño del paquete, 
+                            es cuando se fragmenta, resultando paquetes normales, pero con las siguientes características:</td>
+                    </tr>
+                </table>
+
+                <table width="80%">
+                    <tr>
+                        <td>
+                            <table class="SubtablaFragmentación">
+                                <tr>
+                                    <td>Todos los fragmentos tienen el mismo identificador de paquetes.</td>
+                                </tr>   
+                            </table>
+                            
+                            <table class="SubtablaFragmentación">
+                                <tr>
+                                    <td>El resto de los campos de la cabecera se copia del paquete original, 
+                                        excepto el indicador de longitud del paquete y el checksum.</td>
+                                </tr>
+                            </table>
+                        </td>
+                        
+                        <td>
+                            <table class="SubtablaFragmentación">
+                                <tr>
+                                    <td>La parte de datos de cada fragmento contiene un número de bytes múltiplo de 8, en donde,
+                                        el último no tiene por qué cumplir este requisito.</td>
+                                </tr>
+                            </table>
+
+                            <table class="SubtablaFragmentación">
+                                <tr>
+                                    <td>El bit positivo del campo indicadores es 1 en todos los fragmentos, a excepción del último.</td>
+                                </tr>
+                            </table>
+                        </td>                   
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <img class="ImgFragmentación2" src="img TCPIP/Personaje.jpg">
+
+</body>
+
+<footer>
+    <table class="FooterFragmentación">
+        <tr>
+            <td class="tituloFooter">Protocolo TCP/IP</td>
+        </tr> 
+
+        <tr>
+            <td>José Mayorga72@unach.mx</td>
+        </tr>
+
+        <tr>
+            <td>&copy;2022 por José Mayorga. UNACH, Tuxtla Gutierrez</td>
+        </tr>  
+    </table>
+</footer>
+
+</html>

@@ -1,0 +1,349 @@
+* { padding: 0;
+    margin: 0; }
+
+/*General*/
+table { margin: 0 auto;
+        border-collapse: collapse; }
+
+html { border-top: 15px solid #00ADEF; }
+
+
+/*Parte del menú*/ 
+.menú { color: black; }
+
+a { text-decoration: none;  
+    font-size: 18px; 
+    font: Arial; 
+    letter-spacing: 1pt; }
+    
+a:visited { color: black;  
+            text-decoration: none; }  
+a:active { text-decoration: none  }  
+a:hover { color: rgb(234, 0, 255); } 
+
+
+/*Parte del head*/
+.linea { width: 100px;
+         height: 2.4px;
+         background: rgb(7, 7, 110);
+         margin: 10px;
+         margin-left: 30px;
+         margin-bottom: 20px; }
+
+.tablamenu { background-color: #F2F2F2;  
+             position: absolute;
+             height: auto;
+             right: 300px;
+             top: 600px;
+             width: 40%;
+             height: 250px; }
+
+.contenido { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+             font-size: 16px; 
+             margin: 20px;
+             margin-left: 30px;
+             margin-right: 30px;
+             line-height : 25px;
+             text-align: justify; }
+
+.Banner { border-bottom: 16px solid rgb(11, 4, 145);
+          width: 85%;
+          height: 550px; }
+
+p.titulo { font-family: sans-serif;
+           font-size: 50px; 
+           margin: 0px;
+           margin-top: 20px;
+           margin-left: 20px;
+           margin-right: 20px;
+           color: rgb(7, 7, 110); }
+
+/*Parte del body*/
+/*-------Inicio------*/
+.fondoInicio1 { position: absolute;
+                left: 7px;
+                bottom: -400px;
+                width: 19%; }
+
+.fondoInicio2 { position: absolute;
+                right: -6px;
+                bottom: -1000px;
+                width: 40%; }
+
+.tablaInicio { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+               font-weight: 350;
+               margin-bottom: 45px;
+               text-align: justify;
+               table-layout: fixed;
+               width: 80%;
+               line-height : 28px; }
+
+.tituloInicio { font-size: 20px; 
+                font-weight: 400;
+                line-height : 40px; }
+
+a.LeerMas { font-size: 16px; 
+            font: Arial; }
+
+a.LeerMas:visited { color: black;  
+                    text-decoration: none; }
+
+a.LeerMas:active { text-decoration: none }  
+
+a.LeerMas:hover { color: rgb(0, 0, 0);
+                  text-decoration: underline;
+                  letter-spacing: 1.5pt; } 
+
+/*-----ArquitecturaProtocolos-----*/
+.fondoArquitectura1 { position: absolute;
+                      left: 2px;
+                      bottom: -670px;
+                      width: 18%; }
+
+.fondoArquitectura2 { position: absolute;
+                      right: -10px;
+                      bottom: -1350px;
+                      width: 16%; }
+                
+.tituloArquitectura { font-family: sans-serif;
+                      color: rgb(11, 4, 145);
+                      font-size: 25px; 
+                      margin: 0px;
+                      margin-top: 20px;
+                       margin-left: 20px; }
+                    
+.tablaArquitectura { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                     font-weight: 350;
+                     margin-bottom: 20px;
+                     text-align: justify;
+                     width:95%;
+                     line-height : 28px; }
+
+img.ImagenArquitectura { margin: auto;
+                         display: block;
+                         width: 35%; }
+
+/*------DireccionesIP--------*/
+
+.tablaDireccionesIP { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                      text-align: justify;
+                      font-size: 16px;
+                      font-weight: 350;
+                      table-layout: fixed;
+                      width: 63%;
+                      line-height : 28px; 
+                      margin-bottom: 20px; }
+                      
+.tituloDireccionesIP { font-family: Arial, Helvetica, sans-serif;
+                       font-size: 20px; 
+                       line-height : 40px; 
+                       text-align: center;
+                       color: rgb(15, 15, 102); }
+
+.ImgUnicast { border: 2px solid black;
+              width: 97%; }
+
+.MultiBroad { border: 2px solid black;
+              width: 67%;
+              margin: auto;
+              display: block; }
+
+.ClasesABC { width: 100%; }
+
+.EjemploIP { font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+             text-align: center;
+             color: rgb(8, 8, 89);
+             font-size: 18px;
+             line-height: 40px; }
+
+/*--------Fragmentación-------*/
+.tablaFragmentación { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                      font-size: 18px;
+                      font-weight: 350;
+                      text-align: justify;
+                      table-layout: fixed;
+                      width: 100%;
+                      line-height : 28px;  
+                      margin-bottom: 20px; }
+
+.SubtablaFragmentación { font-family: cursive;
+                         text-align: justify;
+                         table-layout: fixed;
+                         width: 95%;
+                         line-height : 28px; 
+                         margin:10px;
+                         background-color:#fff6ed; }
+
+.ImgFragmentación1{ margin: 25px auto;
+                    display: block;
+                    width: 60%;
+                    margin-bottom: 70px; }
+
+.ImgFragmentación2{ position: absolute;
+                    right: 135px;
+                    bottom: -980px;
+                    width: 16%; }
+
+/*-------Enrutamiento--------*/
+.tablaEnrutamiento { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                     font-weight: 350;
+                     font-size: 17px;
+                     text-align: justify;
+                     table-layout: fixed;
+                     width: 90%;
+                     line-height : 28px;  
+                     margin-bottom: 40px; }
+
+.tituloEnrutamiento { font-family: Arial, Helvetica, sans-serif;
+                      font-size: 20px; 
+                      line-height : 40px; 
+                      text-align: left;
+                      color: rgb(15, 15, 102); }
+
+.tituloTabla { font-family: Arial, Helvetica, sans-serif;
+               font-size: 25px; 
+               line-height : 40px; 
+               text-align: center;
+               color: rgb(15, 15, 102); }
+
+.ImgEnrutamiento { width: 97%; }
+
+/*-------Multiplexación--------*/
+.tablaMultiplexación { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                       font-size: 19px;
+                       text-align: justify;
+                       table-layout: fixed;
+                       width: 80%;
+                       line-height : 33px;
+                       font-weight: lighter;}
+   
+.ImgMultiplexación { width: 70%;
+                     margin-top: 70px; }
+
+
+/*Parte del footer*/
+.tituloFooter { font-size: 24px; 
+                font-weight: 380;
+                line-height : 40px; }
+
+.FooterInicio { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 18px;
+                font-weight: 350;
+                letter-spacing: 0.5pt; 
+                text-align: center; 
+                width: 100%;
+                border: 15px solid #00ADEF; 
+                background-color: #00ADEF;  
+                position: absolute;
+                bottom: -1160px;
+                line-height : 28px; }
+
+.FooterArquitectura { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                      font-size: 18px;
+                      font-weight: 350;
+                      letter-spacing: 0.5pt;
+                      text-align: center; 
+                      width: 100%;
+                      border: 15px solid #00ADEF; 
+                      background-color: #00ADEF;  
+                      position: absolute;
+                      bottom: -1500px;
+                      line-height : 28px; }
+        
+.FooterDirecciones { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                     font-size: 18px;
+                     font-weight: 350;
+                     letter-spacing: 0.5pt;    
+                     text-align: center; 
+                     width: 100%;
+                     border: 15px solid #00ADEF; 
+                     background-color: #00ADEF;  
+                     position: absolute;
+                     bottom: -1650px;
+                     line-height : 28px; }
+        
+.FooterFragmentación { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                       font-size: 18px;
+                       font-weight: 350;
+                       letter-spacing: 0.5pt;
+                       text-align: center; 
+                       width: 100%;
+                       border: 15px solid #00ADEF; 
+                       background-color: #00ADEF;  
+                       position: absolute;
+                       bottom: -1095px;
+                       line-height : 28px; }
+                       
+.FooterTEnrutamiento { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                       font-size: 18px;
+                       font-weight: 350;
+                       letter-spacing: 0.5pt;
+                       text-align: center; 
+                       width: 100%;
+                       border: 15px solid #00ADEF; 
+                       background-color: #00ADEF;  
+                       position: absolute;
+                       bottom: -970px;
+                       line-height : 28px; }
+    
+.FooterMultiplexación { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        font-size: 18px;
+                        font-weight: 350;
+                        letter-spacing: 0.5pt;
+                        text-align: center; 
+                        width: 100%;
+                        border: 15px solid #00ADEF; 
+                        background-color: #00ADEF;  
+                        position: absolute;
+                        bottom: -800px;
+                        line-height : 28px; }
+
+
+    
+
+
+   
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+       
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+
+
+
